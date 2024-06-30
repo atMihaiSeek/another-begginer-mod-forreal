@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "another-begginer-mod",
+	"version": "${version}",
+	"name": "Another Begginer Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"MihaiSeek!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/another-begginer-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mihaiseek.abm.AnotherBegginerMod"
+		],
+		"client": [
+			"net.mihaiseek.abm.AnotherBegginerModClient"
+		],
+		"fabric-datagen": [
+			"net.mihaiseek.abm.AnotherBegginerModDataGenerator"
+		]
+	},
+	"mixins": [
+		"another-begginer-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
